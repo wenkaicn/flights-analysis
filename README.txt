@@ -17,3 +17,5 @@ flight_prices 待分析数据全集
 方法1本质上也是在做 “split-apply-combine”的工作，split是通过for循环过滤出一个DataFrame，combine是通过.append()在一个空的DataFrame添加，不够简洁。
 使用groupby后，可以显著减少循环的使用，更简洁的完成“split-apply-combin”，例如
 flight_prices = flights.groupby(flights.d_time).apply(prices)  # 生成每个航班的票价查询历史
+
+https://mp.weixin.qq.com/s/6wi5poLbv7Zn7M6U_fQptQ
